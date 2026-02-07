@@ -1,0 +1,545 @@
+[
+  {
+    "id": "1",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "设一个 $n(n>1)$ 阶方阵中每一项的值均为 $1$ 或 $-1$，则该矩阵的行列式为",
+      "options": {
+        "A": "$1$",
+        "B": "$0$",
+        "C": "奇数",
+        "D": "偶数"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "D"
+      ]
+    },
+    "points": 2,
+    "difficulty": 0.35,
+    "tags": [
+      "行列式",
+      "行列式性质"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "2",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "若行列式 $|a_{ij}|=d$，则 $|\\begin{matrix}3a_{21}&-6a_{22}&3a_{23}\\\\2a_{31}&-4a_{32}&2a_{33}\\\\-a_{11}&2a_{12}&-a_{11}\\end{matrix}|=$",
+      "options": {
+        "A": "$3d$",
+        "B": "$6d$",
+        "C": "$12d$",
+        "D": "$18d$"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "C"
+      ]
+    },
+    "points": 3,
+    "difficulty": 0.45,
+    "tags": [
+      "行列式",
+      "初等变换"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "3",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "设 $A,B$ 为同阶方阵，且 $A^{-1},B^{-1},(A+B)^{-1}$ 均存在，则 $(A^{-1}+B^{-1})^{-1}=$",
+      "options": {
+        "A": "$A(A+B)^{-1}B$",
+        "B": "$A(A+B)^{-1}$",
+        "C": "$(A+B)^{-1}B$",
+        "D": "$A+B$"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "A"
+      ]
+    },
+    "points": 3,
+    "difficulty": 0.55,
+    "tags": [
+      "矩阵",
+      "逆矩阵"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "4",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "当 $t=$ 时，向量组 $(1,1,1),(t,1,2),(1,2,1)$ 线性无关？",
+      "options": {
+        "A": "$1$",
+        "B": "$-1$",
+        "C": "$-2$",
+        "D": "$2$"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "C"
+      ]
+    },
+    "points": 2,
+    "difficulty": 0.4,
+    "tags": [
+      "向量",
+      "线性无关"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "5",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "设 $V$ 为数域 $K$ 上的 $n(n>1)$ 维线性空间，下列对任意线性变换 $\\varphi$ 成立的是",
+      "options": {
+        "A": "$V=\\mathrm{Im}\\varphi\\oplus\\mathrm{Ker}\\varphi$",
+        "B": "$\\dim V=\\dim\\mathrm{Im}\\varphi+\\dim\\mathrm{Ker}\\varphi$",
+        "C": "$V=\\mathrm{Im}\\varphi+\\mathrm{Ker}\\varphi$",
+        "D": "$\\mathrm{Im}\\varphi\\cap\\mathrm{Ker}\\varphi=\\{0\\}$"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "C"
+      ]
+    },
+    "points": 3,
+    "difficulty": 0.6,
+    "tags": [
+      "线性变换",
+      "像",
+      "核"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "6",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "设 $p(x)$ 为不可约多项式，$f(x)=p^m(x)(m>1)$，则下列正确的是",
+      "options": {
+        "A": "$f|gh\\Rightarrow f|g$ 或 $f|h$",
+        "B": "$f|gh\\Rightarrow f|g$ 或 $f|h^k$",
+        "C": "$(f,f')\\neq1$",
+        "D": "$f$ 在 $\\mathbb{C}$ 上有重根"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "A"
+      ]
+    },
+    "points": 4,
+    "difficulty": 0.7,
+    "tags": [
+      "多项式",
+      "不可约"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "7",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "当 $a,b$ 为何值时，$(x-1)^2$ 整除 $ax^4+bx^2+1$",
+      "options": {
+        "A": "$(-1,2)$",
+        "B": "$(-1,-2)$",
+        "C": "$(1,2)$",
+        "D": "$(1,-2)$"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "D"
+      ]
+    },
+    "points": 3,
+    "difficulty": 0.5,
+    "tags": [
+      "多项式",
+      "整除"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "8",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "若 $Ax=0$ 的解都是 $Bx=0$ 的解，则成立的是",
+      "options": {
+        "A": "A 的列向量由 B 的列向量线性表示",
+        "B": "B 的列向量由 A 的列向量线性表示",
+        "C": "A 的行向量由 B 的行向量线性表示",
+        "D": "B 的行向量由 A 的行向量线性表示"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "D"
+      ]
+    },
+    "points": 4,
+    "difficulty": 0.75,
+    "tags": [
+      "矩阵",
+      "齐次方程"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "9",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "已知矩阵 $X$ 满足方程：$X\\begin{pmatrix}1&2&3\\\\ -1&4&3\\\\ 2&0&1\\end{pmatrix}=\\begin{pmatrix}1&2&1\\\\ -1&3&1\\end{pmatrix}$，则 $X=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "\\begin{pmatrix}5&4&2\\\\ -\\frac{5}{3}&3&2\\end{pmatrix}"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.45,
+    "tags": [
+      "矩阵",
+      "矩阵运算",
+      "矩阵方程"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "10",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "某线性空间上的线性变换 $\\varphi$ 在某组基下的表示矩阵为 $A=\\begin{pmatrix}1&1&1&1\\\\ 3&2&1&1\\\\ 0&1&2&2\\\\ 4&5&3&3\\end{pmatrix}$，则 $\\dim\\mathrm{Ker}(\\varphi)=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "1"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.35,
+    "tags": [
+      "线性变换",
+      "核空间",
+      "表示矩阵"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "11",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "设 $A$ 为 $n$ 阶方阵，$A^*$ 为伴随矩阵，已知 $|A^*|=2^{n-1}$，则 $|A-(A^*)^*|=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "2(\\omega-2^{n-2})^n，其中 \\omega^{n-1}=1"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.7,
+    "tags": [
+      "矩阵",
+      "伴随矩阵",
+      "行列式性质"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "12",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "设方阵 $M=\\begin{pmatrix}A&B\\\\0&C\\end{pmatrix}$，其中 $A,C$ 均可逆，则 $M^{-1}=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "\\begin{pmatrix}A^{-1}&-A^{-1}BC^{-1}\\\\0&C^{-1}\\end{pmatrix}"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.3,
+    "tags": [
+      "矩阵",
+      "分块矩阵",
+      "逆阵"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "13",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "已知 $V$ 是 3 维复线性空间，$\\varphi$ 在基 $e_1,e_2,e_3$ 下的矩阵为 $A=\\begin{pmatrix}0&-a&0\\\\1&2a&0\\\\0&0&1\\end{pmatrix}$。若 $V$ 恰有 3 个互不相同的 1 维不变子空间，则 $a=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "a\\neq0 且 a\\neq1"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.55,
+    "tags": [
+      "矩阵",
+      "不变子空间",
+      "特征值"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "14",
+    "content_type": "single_choice",
+    "content": {
+      "stem": "在 $(\\mathbb{R}^+,\\oplus,\\odot)$ 中定义 $a\\oplus b=ab,\\ k\\odot a=a^k$，则 $2$ ______ 由 $1$ 线性表出。",
+      "options": {
+        "A": "不可",
+        "B": "可"
+      }
+    },
+    "answer": {
+      "type": "single_choice",
+      "value": [
+        "B"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.25,
+    "tags": [
+      "线性空间",
+      "线性关系"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "15",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "设 $\\alpha,\\beta,\\gamma,\\delta$ 是 $V$ 的一个基，则当 $a$ 满足 \\underline{\\qquad} 时，$2\\alpha+3\\beta$，$5\\alpha+4\\beta$，$\\alpha+2\\beta+\\gamma+\\delta$，$2\\alpha+2\\beta-2\\gamma+a\\delta$ 也是 $V$ 的一个基。"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.5,
+    "tags": [
+      "线性空间",
+      "基"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "16",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "设 $\\alpha,\\beta,\\gamma$ 线性无关，$V_1=\\langle\\alpha,\\alpha+\\beta\\rangle$，$V_2=\\langle\\alpha+\\beta,\\beta,\\gamma\\rangle$，则 $\\dim(V_1\\cap V_2)=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.4,
+    "tags": [
+      "线性空间",
+      "维数"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "17",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "已知 $\\varphi(\\xi_1,\\xi_2,\\xi_3,\\xi_4)=(\\eta_1,\\eta_2,\\eta_3)\\begin{pmatrix}1&2&3&4\\\\1&1&2&2\\\\0&1&2&3\\end{pmatrix}$，则 \\underline{\\qquad} 是 $\\mathrm{Im}\\varphi$ 的一个基，\\underline{\\qquad} 是 $\\mathrm{Ker}\\varphi$ 的一个基。"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.65,
+    "tags": [
+      "线性映射",
+      "值域",
+      "核"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "18",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "设线性变换 $\\varphi,\\psi$ 在同一基下的矩阵分别为 $A,B$，则 $\\varphi\\psi^2+3id_V$ 的矩阵为 \\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.3,
+    "tags": [
+      "线性变换",
+      "矩阵运算"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "19",
+    "content_type": "fill_blank",
+    "content": {
+      "stem": "设线性变换 $\\varphi$ 在基 $\\xi_1,\\xi_2,\\dots$ 下的矩阵 $A$ 满足 $\\det A=5$，则在基 $\\xi_1+\\xi_2,\\xi_2,\\dots$ 下的矩阵 $B$ 的 $\\det B=\\underline{\\qquad}$"
+    },
+    "answer": {
+      "type": "fill_blank",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 0,
+    "difficulty": 0.35,
+    "tags": [
+      "相似变换",
+      "行列式"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "20",
+    "content_type": "proof",
+    "content": {
+      "stem": "设 $V=\\mathbb{R}^3$，线性变换 $\\varphi$ 在基 $e_1,e_2,e_3$ 下的矩阵为 $A=\\begin{pmatrix}2&-1&3\\\\1&2&0\\\\-2&2&1\\end{pmatrix}$。给定向量组 $\\alpha_1=(-1,-1,2)^t,\\ \\alpha_2=(3,2,0)^t,\\ \\alpha_3=(-1,-1,1)^t$。\n(1) 判断 $\\alpha_1,\\alpha_2,\\alpha_3$ 是否为 $V$ 的一组基；\n(2) 若是，求 $\\varphi$ 在该基下的矩阵。"
+    },
+    "answer": {
+      "type": "proof",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 10,
+    "difficulty": 0.6,
+    "tags": [
+      "线性变换",
+      "过渡矩阵",
+      "基变换"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "21",
+    "content_type": "proof",
+    "content": {
+      "stem": "已知 $\\alpha_1=(2,1,4,-2)^t,\\ \\alpha_2=(5,-1,3,3)^t,\\ \\alpha_3=(1,0,1,0)^t$ 是线性方程组\n$$\\begin{cases}\n2x_1-9x_2-cx_3+bx_4=1\\\\\nx_1-11x_2+ax_3+bx_4=1\\\\\n5x_1-23x_2-2x_3-15x_4=3\\\\\n4x_1-31x_2-x_3-15x_4=3\n\\end{cases}$$\n的三个解。\n(1) 证明该方程组系数矩阵的秩为 2；\n(2) 求参数 $a,b,c$，并求解该方程组。"
+    },
+    "answer": {
+      "type": "proof",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 10,
+    "difficulty": 0.75,
+    "tags": [
+      "线性方程组",
+      "矩阵的秩"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "22",
+    "content_type": "proof",
+    "content": {
+      "stem": "设 $A$ 为 $m\\times n$ 阶矩阵，$A=(\\alpha_1,\\alpha_2,\\dots,\\alpha_n)$。$T$ 为任意 $m$ 阶非奇异矩阵，记 $TA=(\\beta_1,\\beta_2,\\dots,\\beta_n)$。证明：$\\{\\alpha_{i_1},\\dots,\\alpha_{i_k}\\}$ 线性相关当且仅当 $\\{\\beta_{i_1},\\dots,\\beta_{i_k}\\}$ 线性相关。"
+    },
+    "answer": {
+      "type": "proof",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 10,
+    "difficulty": 0.4,
+    "tags": [
+      "矩阵",
+      "线性关系",
+      "线性变换"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "23",
+    "content_type": "proof",
+    "content": {
+      "stem": "证明：线性方程组 $AX=\\beta_1$ 与 $AX=\\beta_2$ 同时有解，当且仅当 $\\mathrm{rank}(A)=\\mathrm{rank}(A,\\beta_1,\\beta_2)$。"
+    },
+    "answer": {
+      "type": "proof",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 10,
+    "difficulty": 0.5,
+    "tags": [
+      "线性方程组",
+      "矩阵的秩",
+      "增广矩阵"
+    ],
+    "metadata": {}
+  },
+  {
+    "id": "24",
+    "content_type": "proof",
+    "content": {
+      "stem": "证明：任一方阵都可以表示为一个非奇异矩阵与一个幂等矩阵（$A^2=A$）的乘积。"
+    },
+    "answer": {
+      "type": "proof",
+      "value": [
+        "answer"
+      ]
+    },
+    "points": 10,
+    "difficulty": 0.7,
+    "tags": [
+      "矩阵",
+      "幂等矩阵",
+      "非奇异矩阵"
+    ],
+    "metadata": {}
+  }
+]
