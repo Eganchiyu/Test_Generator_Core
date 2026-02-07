@@ -2,7 +2,7 @@ import json
 import random
 import uuid
 
-NUM_ITEMS = 10_000
+NUM_ITEMS = 10000
 
 CONTENT_TYPES = ["single_choice", "fill_blank", "proof"]
 TAGS_POOL = [

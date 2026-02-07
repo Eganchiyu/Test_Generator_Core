@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9998cd52-345c-4587-bae3-f0174a90fc9b" name="更改" comment="添加两个函数：全局难度偏差最小化、局部难度偏差最小化；解耦和重构函数逻辑">
-      <change afterPath="$PROJECT_DIR$/Generate_Fake_Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Generator.py" afterDir="false" />
+    <list default="true" id="9998cd52-345c-4587-bae3-f0174a90fc9b" name="更改" comment="构造了一万条假数据，格式化代码，添加注释">
+      <change afterPath="$PROJECT_DIR$/Generate_Fake_Data_star.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Legacy/Test_Generator_star_ver0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generate_Fake_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generate_Fake_Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Legacy/Test_Generator_01_ver0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Generator_Legacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Legacy/Test_Generator_Legacy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fake_dataset.json" beforeDir="false" afterPath="$PROJECT_DIR$/fake_dataset.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +43,10 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Generate_Fake_Data.executor": "Run",
+    "Python.Generate_Fake_Data_star.executor": "Run",
     "Python.Rename.executor": "Run",
     "Python.Test_Generator.executor": "Run",
+    "Python.Test_Generator_Legacy.executor": "Run",
     "Python.test_ORTools.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -63,6 +70,7 @@
       <recent name="D:\Projects\Python\Test_Generator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Python\Test_Generator_Core\Legacy" />
       <recent name="D:\Projects\Python\Test_Generator_Core" />
     </key>
   </component>
@@ -86,7 +94,7 @@
       <workItem from="1770362836174" duration="16000" />
       <workItem from="1770365068184" duration="2532000" />
       <workItem from="1770425617047" duration="6034000" />
-      <workItem from="1770436056320" duration="11446000" />
+      <workItem from="1770436056320" duration="22317000" />
     </task>
     <task id="LOCAL-00001" summary="初始提交代码信息">
       <option name="closed" value="true" />
@@ -120,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770451916263</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="构造了一万条假数据，格式化代码，添加注释">
+      <option name="closed" value="true" />
+      <created>1770453729033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770453729034</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,13 +159,16 @@
     <MESSAGE value="更新README和GPL-3.0许可证文件" />
     <MESSAGE value="更新导图" />
     <MESSAGE value="添加两个函数：全局难度偏差最小化、局部难度偏差最小化；解耦和重构函数逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加两个函数：全局难度偏差最小化、局部难度偏差最小化；解耦和重构函数逻辑" />
+    <MESSAGE value="构造了一万条假数据，格式化代码，添加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="构造了一万条假数据，格式化代码，添加注释" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Test_Generator_Core$Generate_Fake_Data.coverage" NAME="Generate_Fake_Data 覆盖结果" MODIFIED="1770453239527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Test_Generator_Core$Generate_Fake_Data.coverage" NAME="Generate_Fake_Data 覆盖结果" MODIFIED="1770471712654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Test_Generator_Core$Generate_Fake_Data_star.coverage" NAME="Generate_Fake_Data_star 覆盖结果" MODIFIED="1770473573482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Test_Generator$test_ORTools.coverage" NAME="test_ORTools 覆盖结果" MODIFIED="1770434187528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OR-Tools" />
     <SUITE FILE_PATH="coverage/Test_Generator$Test_Generator.coverage" NAME="Test_Generator 覆盖结果" MODIFIED="1770435659703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Test_Generator_Core$Test_Generator_Legacy.coverage" NAME="Test_Generator_Legacy 覆盖结果" MODIFIED="1770466437372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Test_Generator$Rename.coverage" NAME="Rename 覆盖结果" MODIFIED="1770252083728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Test_Generator_Core$Test_Generator.coverage" NAME="Test_Generator 覆盖结果" MODIFIED="1770453304483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Test_Generator_Core$Test_Generator.coverage" NAME="Test_Generator 覆盖结果" MODIFIED="1770473950903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

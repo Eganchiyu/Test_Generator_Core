@@ -87,7 +87,7 @@ def minimize_item_diff_deviation(model, vars_, questions, target_diff):
     #对于每个题目单独约束
     for q in questions:
         qi = vars_[f"q_{q['id']}"]
-        diff = int(q['difficulty'] * 100)
+        diff = q['difficulty']
 
         dev = model.NewIntVar(0, 10**6, f"dev_{q['id']}")
         model.Add(dev >= (diff - target_diff) * qi)
@@ -106,7 +106,7 @@ def minimize_total_diff_deviation(model, vars_, questions, target, num_q):
     total_diff = model.NewIntVar(0, 10**7, "total_diff")
     model.Add(
         total_diff == sum(
-            vars_[f"q_{q['id']}"] * int(q['difficulty'] * 100)
+            vars_[f"q_{q['id']}"] * q['difficulty']
             for q in questions
         )
     )
@@ -124,13 +124,14 @@ def minimize_total_diff_deviation(model, vars_, questions, target, num_q):
 # =========================
 # 主流程
 # =========================
-def paper_generation_task(file_path, difficulty=0.6):
+def paper_generation_task(file_path, difficulty=3):
     with open(file_path, "r", encoding="utf-8") as f:
         questions = json.load(f)
 
     # 难度系数边界保护 正点化难度系数
-    difficulty = min(max(float(difficulty), 0.3), 0.7) #如果太高或太低会导致模型退化
-    target_difficulty = int(difficulty * 100)
+    difficulty = int(difficulty)
+    difficulty = min(max(difficulty, 1), 6)
+    target_difficulty = difficulty
 
     # 构造求解器
     prob = CPSolver()
@@ -153,18 +154,18 @@ def paper_generation_task(file_path, difficulty=0.6):
 
     # 目标：最小化代偿函数（局部代偿函数）
     # 要求选出的每一题都尽量贴近target_difficulty
-    minimize_item_diff_deviation(
-        prob.model, prob.vars, questions, target_difficulty
-    )
+    # minimize_item_diff_deviation(
+    #     prob.model, prob.vars, questions, target_difficulty
+    # )
 
     # 或者使用这个代偿函数（整体代偿函数）
     # 区别在于，是整体难度贴近target_difficulty，但是允许内部难易题抵消
-    # minimize_total_diff_deviation(
-    #     prob.model, prob.vars, questions, target_difficulty, num_q
-    # )
+    minimize_total_diff_deviation(
+        prob.model, prob.vars, questions, target_difficulty, num_q
+    )
 
-    # 求解
-    status = prob.solve()
+    # 求解 限定时间5秒
+    status = prob.solve() # time_limit=5
 
     # 汇总输出
     if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
@@ -188,6 +189,6 @@ def paper_generation_task(file_path, difficulty=0.6):
 if __name__ == "__main__":
     try:
         #paper_generation_task("output.json")
-        paper_generation_task("fake_dataset.json")
+        paper_generation_task("../Dataset/fake_dataset.json")
     except FileNotFoundError:
         print("找不到 output.json")

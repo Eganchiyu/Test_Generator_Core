@@ -109,7 +109,7 @@ class CPSolver:
 
 
 # --- 组卷任务逻辑 ---
-def paper_generation_task(file_path, difficulty = 0.8):
+def paper_generation_task(file_path, difficulty = 0.5):
     # 1. 加载数据：使用 json.load 读取文件
     with open(file_path, 'r', encoding='utf-8') as f:
         questions = json.load(f)
@@ -261,6 +261,6 @@ def paper_generation_task(file_path, difficulty = 0.8):
 if __name__ == "__main__":
     # 请确保同目录下有 output.json 文件
     try:
-        paper_generation_task("output.json")
+        paper_generation_task("../Dataset/output.json")
     except FileNotFoundError:
         print("没找到 output.json 文件，请检查一下路径。")
