@@ -62,9 +62,19 @@ def gen_item(i: int):
         "metadata": {}
     }
 
-data = [gen_item(i + 1) for i in range(NUM_ITEMS)]
+data_by_type = {
+    "single_choice": [],
+    "fill_blank": [],
+    "proof": []
+}
 
-with open("fake_dataset.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
+for i in range(1, NUM_ITEMS + 1):
+    item = gen_item(i)
+    data_by_type[item["content_type"]].append(item)
+
+for t, items in data_by_type.items():
+    with open(f"/by_type/{t}.json", "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, indent=2)
+    print(f"{t}: {len(items)} items")
 
 print(f"Generated {NUM_ITEMS} items.")
