@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9998cd52-345c-4587-bae3-f0174a90fc9b" name="更改" comment="格式化文件夹，重构难度系数为1-6星">
-      <change afterPath="$PROJECT_DIR$/src/Test_Generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/constraints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/load_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/Generate_Fake_Data_star.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset/Generate_Fake_Data_star.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="9998cd52-345c-4587-bae3-f0174a90fc9b" name="更改" comment="格式化文件夹，重构难度系数为1-6星" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +91,7 @@
       <workItem from="1770365068184" duration="2532000" />
       <workItem from="1770425617047" duration="6034000" />
       <workItem from="1770436056320" duration="22678000" />
-      <workItem from="1770516446400" duration="28269000" />
+      <workItem from="1770516446400" duration="28567000" />
     </task>
     <task id="LOCAL-00001" summary="初始提交代码信息">
       <option name="closed" value="true" />
