@@ -188,6 +188,6 @@ def paper_generation_task(file_path, difficulty=0.6):
 if __name__ == "__main__":
     try:
         #paper_generation_task("output.json")
-        paper_generation_task("../Dataset/fake_dataset.json")
+        paper_generation_task("../fake_dataset.json")
     except FileNotFoundError:
         print("找不到 output.json")

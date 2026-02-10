@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9998cd52-345c-4587-bae3-f0174a90fc9b" name="更改" comment="格式化文件夹，重构难度系数为1-6星" />
+    <list default="true" id="9998cd52-345c-4587-bae3-f0174a90fc9b" name="更改" comment="格式化文件夹，重构难度系数为1-6星">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ignore/Legacy/Test_Generator_01_ver0.py" beforeDir="false" afterPath="$PROJECT_DIR$/ignore/Legacy/Test_Generator_01_ver0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ignore/Legacy/Test_Generator_Legacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/ignore/Legacy/Test_Generator_Legacy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ignore/Legacy/Test_Generator_star_ver0.py" beforeDir="false" afterPath="$PROJECT_DIR$/ignore/Legacy/Test_Generator_star_ver0.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,11 +69,11 @@
       <recent name="D:\Projects\Python\Test_Generator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Python\Test_Generator_Core\ignore" />
+      <recent name="D:\Projects\Python\Test_Generator_Core" />
       <recent name="D:\Projects\Python\Test_Generator_Core\Dataset\by_type" />
       <recent name="D:\Projects\Python\Test_Generator_Core\src\core" />
       <recent name="D:\Projects\Python\Test_Generator_Core\src" />
-      <recent name="D:\Projects\Python\Test_Generator_Core\Dataset" />
-      <recent name="D:\Projects\Python\Test_Generator_Core\Legacy" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -91,7 +97,7 @@
       <workItem from="1770365068184" duration="2532000" />
       <workItem from="1770425617047" duration="6034000" />
       <workItem from="1770436056320" duration="22678000" />
-      <workItem from="1770516446400" duration="28567000" />
+      <workItem from="1770516446400" duration="29486000" />
     </task>
     <task id="LOCAL-00001" summary="初始提交代码信息">
       <option name="closed" value="true" />
