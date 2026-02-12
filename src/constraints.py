@@ -38,13 +38,15 @@ def add_difficulty_count_vars(model, vars_, questions):
     return diff_count
 
 
-def add_difficulty_bucket_constraints(model, diff_count, total_q):
+def add_difficulty_bucket_constraints(model, diff_count, total_q, bucket_constraints):
     """
-    防止 1⭐ + 6⭐ 极端
+    防止 1⭐ + 6⭐ 极端, bucket_config 来自 yaml 的 difficulty.bucket_constraints
     """
     easy = diff_count[1] + diff_count[2]
     mid  = diff_count[3] + diff_count[4]
     hard = diff_count[5] + diff_count[6]
+
+    for
 
     # 比例约束（整数化）
     model.Add(easy * 10 >= total_q * 2)   # ≥20%

@@ -5,9 +5,9 @@ NUM_ITEMS = 10000
 
 # 题型与权重（1:2:2）
 CONTENT_TYPES = (
-    ["single_choice"] * 1 +
+    ["single_choice"] * 2 +
     ["fill_blank"] * 2 +
-    ["proof"] * 2
+    ["proof"] * 1
 )
 
 TAGS_POOL = [
@@ -15,11 +15,6 @@ TAGS_POOL = [
     "特征值", "向量", "多项式", "线性方程组"
 ]
 
-POINTS_MAP = {
-    "single_choice": 4,
-    "fill_blank": 5,
-    "proof": 10
-}
 
 def gen_item(i: int):
     content_type = random.choice(CONTENT_TYPES)
@@ -56,7 +51,6 @@ def gen_item(i: int):
         "content_type": content_type,
         "content": content,
         "answer": answer,
-        "points": POINTS_MAP[content_type],
         "difficulty": random.randint(1, 6),  # 星级 1–6
         "tags": random.sample(TAGS_POOL, k=random.randint(1, 3)),
         "metadata": {}
@@ -73,7 +67,7 @@ for i in range(1, NUM_ITEMS + 1):
     data_by_type[item["content_type"]].append(item)
 
 for t, items in data_by_type.items():
-    with open(f"/by_type/{t}.json", "w", encoding="utf-8") as f:
+    with open(f"by_type/{t}.json", "w", encoding="utf-8") as f:
         json.dump(items, f, ensure_ascii=False, indent=2)
     print(f"{t}: {len(items)} items")
 

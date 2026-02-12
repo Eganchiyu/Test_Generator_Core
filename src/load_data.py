@@ -1,30 +1,22 @@
 import json
 import random
+import config
 
-MAX_PER_TYPE = 500
-
-def load_questions_by_type(path, max_n=MAX_PER_TYPE):
+def load_questions_by_type(path):
     """
     读取单一题型文件，必要时随机抽样
     """
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
-
     n = len(data)
-    if n > max_n:
-        data = random.sample(data, max_n)
-        # 覆盖保存（可选）
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
     return data, n
 
+
+
 def init_data():
-    datasets = {
-        "single_choice": "../Dataset/by_type/single_choice.json",
-        "fill_blank": "../Dataset/by_type/fill_blank.json",
-        "proof": "../Dataset/by_type/proof.json",
-    }
+    context = config.Config()
+    datasets = context.dataset_path
+    max_per_type = context.max_per_type
 
     all_questions = []
     stats = {}

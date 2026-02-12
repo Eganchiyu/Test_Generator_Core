@@ -1,0 +1,28 @@
+# config.yaml
+
+# 各题型数量
+question_types:
+  - name: "single_choice"
+    count: 6.0
+  - name: "fill_blank"
+    count: 6
+  - name: "proof"
+    count: 7
+
+#
+difficulty:
+  target_average: 3
+  bucket_constraints:
+    star_1: 0.1
+    star_2: 0.1
+    star_3: 0.4
+    star_4: 0.2
+    star_5: 0.3
+    star_6: 0
+
+data:
+  max_per_type: 500
+  paths:
+    single_choice: "../Dataset/by_type/single_choice.json"
+    fill_blank: "../Dataset/by_type/fill_blank.json"
+    proof: "../Dataset/by_type/proof.json"
